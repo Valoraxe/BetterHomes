@@ -1,0 +1,14 @@
+.vision-container {
+    background-color: $bg-color;
+    text-align: center;
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vision-message {
+    font-size: $large-size;
+    padding: $mid-size;
+}

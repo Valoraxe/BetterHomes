@@ -1,0 +1,49 @@
+.ways-container {
+    background-color: $bg-color;
+    width: 100%;
+    min-height: 500px;
+    padding-top: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ways-content {
+    padding: 50px;
+}
+
+.ways-title {
+    font-weight: $bold-font;
+}
+
+.ways-text {
+    margin-top: $large-size;
+    margin-bottom: $large-size;
+}
+
+.ways-right {
+    padding: $large-size;
+}
+
+.ways-right img {
+    height: 400px;
+    width: 600px;
+}
+
+@media (max-width: 1100px) {
+    .ways-right img {
+        height: 300px;
+        width: 400px;
+    }
+}
+
+@media (max-width: $screen-change-xl) {
+    .ways-right {
+        display: none;
+    }
+
+    .ways-content {
+        text-align: center;
+    }
+}

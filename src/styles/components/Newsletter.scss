@@ -1,0 +1,61 @@
+.newsletter-container {
+    background-color: $menu-background;
+    color: $bg-color;
+    width: 100%;
+    min-height: 500px;
+    font-size: $mid-size;
+    display: flex;
+}
+
+.newsletter-container img {
+    width: 60%;
+}
+
+.newsletter-content {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-left: 7%;
+    padding-right: 6%;
+}
+
+.newsletter-title {
+    font-weight: $bold-font;
+    margin-bottom: 10px;
+}
+
+.newsletter-text {
+    margin-bottom: $mid-size;
+}
+
+.newsletter-terms {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.terms-link {
+    font-weight: $bold-font;
+    color: $terms-color;
+    text-decoration: none;
+}
+
+@media (max-width: $screen-change-xl) {
+    .newsletter-content {
+        justify-content: center;
+    }
+
+    .newsletter-title {
+        font-weight: $bold-font;
+        font-size: $large-size;
+        margin-bottom: $large-size;
+    }
+    
+    .newsletter-text {
+        margin-bottom: $large-size;
+    }
+
+    .newsletter-container img {
+        display: none;
+    }
+}

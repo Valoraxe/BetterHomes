@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.site-container {
+    min-height: 2000px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.div-link {
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: $screen-change-l) {
+    .div-link {
+      left: 40%;
+    }
+}
+
+.text-link {
+    font-weight: $bold-font;
+    color: $link-color;
+}
+
+.home-button {
+    background-color: $bg-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: $mid-size;
+    font-weight: $bold-font;
+    cursor: pointer;
+    border: 0;
+    transition: background-color 1s;
+    box-shadow: 5px 5px;
+    letter-spacing: 1px;
+}
+
+.home-button:hover {
+    background-color: $menu-background;
+}
+
+.sub-title {
+    font-family: Tahoma, sans-serif;
+    font-size: $large-size;
+    font-weight: $bold-font;
+    margin: 0;
+}
+
+.big-message {
+    font-size: $large-size;
+    padding: $mid-size;
+}

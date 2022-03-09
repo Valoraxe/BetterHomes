@@ -1,0 +1,48 @@
+.home {
+    min-height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home::after {
+    background-image: url('/public/bigHouse.jpg');
+}
+
+.home-content {
+    text-align: left;
+    animation: welcome;
+    animation-duration: 1s;
+    margin-top: -170px;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes welcome {
+    0%   {padding-left:80px; opacity: 0;}
+    25%  {padding-left:60px; opacity: 0.25;}
+    50%  {padding-left:40px; opacity: 0.5;}
+    75%  {padding-left:20px; opacity: 0.75;}
+    100% {padding-left:0; opacity: 1;}
+}
+
+.title {
+    font-family: 'Brush Script MT', cursive;
+    margin: 0;
+    font-size: $title-font;
+    font-weight: $bold-font;
+}
+
+@media (max-width: 630px) {
+    .title {
+        font-size: 70px;
+    }
+}
+
+.home-message {
+    font-family: Tahoma, sans-serif;
+    font-size: $mid-size;
+    font-weight: $bold-font;
+}

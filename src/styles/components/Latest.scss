@@ -1,0 +1,30 @@
+.latest {
+    min-height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest::after {
+    background-image: url('/public/field.jpg');
+}
+
+.latest-content {
+    text-align: center;
+    position: relative;
+}
+
+.latest-button {
+    margin-bottom: 80px;
+}
+
+.latest-link {
+    left: 242px;
+}
+
+@media (max-width: $screen-change-l) {
+    .latest-link {
+      left: 122px;
+    }
+}
